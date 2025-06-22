@@ -42,7 +42,6 @@ const travelerSchema = new mongoose.Schema({
 });
 
 // Index for better query performance
-travelerSchema.index({ passportNumber: 1 });
 travelerSchema.index({ createdAt: -1 });
 
 const Traveler = mongoose.model('Traveler', travelerSchema);
