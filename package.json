@@ -1,12 +1,22 @@
 {
-  "name": "champika-exporters-backend",
+  "name": "traveler-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Backend for traveler information management",
+  "main": "server.js",
   "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "dev": "NODE_ENV=development nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10"
+  }
 }
